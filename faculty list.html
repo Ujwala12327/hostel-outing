@@ -39,7 +39,8 @@
           <a href="aprroved.html"> <div class="btn btn-success" >Approve</div></a>
         </td>
         <td>
-          <a href="rejected.html"><div class="btn btn-danger">Decline</div></a>
+          <div class="btn btn-danger" onclick="getdata()">Decline</div>
+          <p id="demo"></p>
         </td>
 
       </tr>
@@ -50,7 +51,8 @@
           <a href="aprroved.html"> <div class="btn btn-success" >Approve</div></a>
         </td>
         <td>
-          <a href="rejected.html"><div class="btn btn-danger">Decline</div></a>
+          <div class="btn btn-danger"onclick="getdata1()" >Decline</div>
+          <p id="demo1"></p>
         </td>
 
       </tr>
@@ -69,7 +71,8 @@
           <a href="aprroved.html"> <div class="btn btn-success" >Approve</div></a>
         </td>
         <td>
-          <a href="rejected.html"><div class="btn btn-danger">Decline</div></a>
+          <div class="btn btn-danger" onclick="getdata2()">Decline</div>
+          <p id="demo2"></p>
         </td>
 
 
@@ -81,7 +84,8 @@
           <a href="aprroved.html"> <div class="btn btn-success" >Approve</div></a>
         </td>
         <td>
-          <a href="rejected.html"><div class="btn btn-danger">Decline</div></a>
+          <div class="btn btn-danger" onclick="getdata3()">Decline</div>
+          <p id="demo3"></p>
         </td>
 
 
@@ -91,7 +95,22 @@
   
 
  
- </script> 
+ <script>
+  function getdata(){
+    document.getElementById("demo").innerHTML="<textarea cols = '10' rows = '5' name='text' id='text_id'> </textarea>"
+  }
+  function getdata1(){
+    document.getElementById("demo1").innerHTML="<textarea cols = '10' rows = '5' name='text' id='text_id'> </textarea>"
+  }
+  function getdata2(){
+    document.getElementById("demo2").innerHTML="<textarea cols = '10' rows = '5' name='text' id='text_id'> </textarea>"
+  }
+  function getdata3(){
+    document.getElementById("demo3").innerHTML="<textarea cols = '10' rows = '5' name='text' id='text_id'> </textarea>"
+  }
+  
+  
+ </script>
 </body>
 
 </html>
